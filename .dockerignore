@@ -22,3 +22,4 @@ README.md
 coveralls.json
 docker-compose.yml
 erl_crash.dump
+deps

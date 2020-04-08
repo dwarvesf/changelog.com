@@ -37,7 +37,7 @@ config :phoenix, :stacktrace_depth, 20
 config :changelog, Changelog.Repo,
   adapter: Ecto.Adapters.Postgres,
   pool_size: 10,
-  url: (System.get_env("DB_URL") || "ecto://postgres@localhost:5432/changelog_dev")
+  url: (System.get_env("DB_URL") || "ecto://postgres:postgres@localhost:2222/changelog_dev")
 
 config :arc,
   storage_dir: "priv/uploads"
